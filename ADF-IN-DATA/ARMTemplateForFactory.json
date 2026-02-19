@@ -130,22 +130,6 @@
 											"value": "@endswith(activity('Get Metadata2').output.itemName, '.xlsx')",
 											"type": "Expression"
 										},
-										"ifFalseActivities": [
-											{
-												"name": "Set variable1",
-												"type": "SetVariable",
-												"dependsOn": [],
-												"policy": {
-													"secureOutput": false,
-													"secureInput": false
-												},
-												"userProperties": [],
-												"typeProperties": {
-													"variableName": "dummy",
-													"value": "Null"
-												}
-											}
-										],
 										"ifTrueActivities": [
 											{
 												"name": "Copy data1",
